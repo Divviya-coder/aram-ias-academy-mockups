@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ARAM IAS Current Affairs — daily news, PIB analysis, Mains issue desk, Prelims sprint, quizzes and revision.">
+  <title>Current Affairs — ARAM IAS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <!-- Global site stylesheet (design tokens, header, buttons, footer) -->
+  <link rel="stylesheet" href="css/main.css?v=86">
+  <!-- Current Affairs-only stylesheet -->
+  <link rel="stylesheet" href="css/current-affairs.css?v=4">
+</head>
+<body class="ca-page">
+
+  <!-- Header (nav + announcement bar rendered by content-blueprint.js) -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo brand-logo-image" aria-label="ARAM IAS home">
+        <img src="assets/aram-logo.svg" alt="ARAM IAS Academy logo">
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="programmes-upsc-foundation.html">Foundation</a>
+        <a href="post-foundation.html">Post-Foundation</a>
+        <a href="current-affairs.html" class="active">Current Affairs</a>
+        <a href="aram-ai.html">ARAM AI</a>
+        <a href="resources.html">Resources</a>
+        <a href="results.html">Results</a>
+        <a href="about.html">About</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#quiz-hub" class="btn btn-primary">Start Today's Quiz</a>
+      </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- Dedicated Current Affairs sticky sub-navigation -->
+  <nav class="ca-subnav" aria-label="Current Affairs navigation">
+    <div class="container ca-subnav-inner">
+      <a href="#today" class="is-active">Today</a>
+      <a href="#news-navigator">News Navigator</a>
+      <a href="#mains-desk">Mains</a>
+      <a href="#prelims-sprint">Prelims</a>
+      <a href="#pib">PIB</a>
+      <a href="#issue-chains">Issue Chains</a>
+      <a href="#quiz-hub">Quiz</a>
+      <a href="#revision-centre">Revision</a>
+      <a href="#browse-subject">Subjects</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Today's desk: news deck + calendar + quick links -->
+    <section class="ca-section ca-section-tight" id="today">
+      <div class="container">
+        <div class="ca-section-heading">
+          <div>
+            <span class="ca-section-number">01</span>
+            <div><p>Today's Desk</p></div>
+          </div>
+        </div>
+
+        <div class="ca-desk-grid">
+
+          <!-- Card 1: Today's News deck with date navigation + vertical slider -->
+          <article class="ca-deck-card ca-news-deck" aria-label="Today's news">
+            <header class="ca-deck-datebar">
+              <button type="button" class="ca-deck-arrow" data-deck-prev aria-label="Previous day">‹</button>
+              <div class="ca-deck-date">
+                <small>Current desk</small>
+                <strong data-current-date>9 September 2026</strong>
+              </div>
+              <button type="button" class="ca-deck-arrow" data-deck-next aria-label="Next day">›</button>
+            </header>
+            <div class="ca-deck-slider" data-news-slider>
+              <p class="ca-deck-grouplabel">Mains</p>
+              <a href="#" class="ca-deck-item" data-lens="mains">
+                <span class="ca-deck-tag ca-tag-mains">Mains</span>
+                <strong>India–EU Trade Agreement: beyond tariffs, the strategic stakes</strong>
+                <small>GS II · IR · GS III · Economy</small>
+              </a>
+              <a href="#" class="ca-deck-item" data-lens="mains">
+                <span class="ca-deck-tag ca-tag-mains">Mains</span>
+                <strong>India–Africa: development partnership and Global South diplomacy</strong>
+                <small>GS II · IR</small>
+              </a>
+              <a href="#" class="ca-deck-item" data-lens="mains">
+                <span class="ca-deck-tag ca-tag-mains">Mains</span>
+                <strong>Women's time poverty and the invisible care economy</strong>
+                <small>GS I · Society</small>
+              </a>
+              <p class="ca-deck-grouplabel">Prelims</p>
+              <a href="#" class="ca-deck-item" data-lens="prelims">
+                <span class="ca-deck-tag ca-tag-prelims">Prelims</span>
+                <strong>New Ramsar sites: wetlands, criteria and conservation</strong>
+                <small>Environment</small>
+              </a>
+              <a href="#" class="ca-deck-item" data-lens="prelims">
+                <span class="ca-deck-tag ca-tag-prelims">Prelims</span>
+                <strong>India Semiconductor Mission: where the ecosystem stands</strong>
+                <small>S&amp;T · Economy</small>
+              </a>
+              <a href="#" class="ca-deck-item" data-lens="prelims">
+                <span class="ca-deck-tag ca-tag-prelims">Prelims</span>
+                <strong>RBI monetary policy and the inflation-growth trade-off</strong>
+                <small>Economy</small>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2: Themed month calendar with Prelims/Mains/PIB markers -->
+          <article class="ca-deck-card ca-calendar-card" aria-label="Current Affairs calendar">
+            <header class="ca-cal-head">
+              <button type="button" class="ca-deck-arrow" data-cal-prev aria-label="Previous month">‹</button>
+              <div class="ca-cal-title">
+                <strong data-cal-month>September 2026</strong>
+                <div class="ca-cal-pickers">
+                  <select data-cal-month-select aria-label="Select month"></select>
+                  <select data-cal-year-select aria-label="Select year"></select>
+                </div>
+              </div>
+              <button type="button" class="ca-deck-arrow" data-cal-next aria-label="Next month">›</button>
+            </header>
+            <div class="ca-cal-weekdays"><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div>
+            <div class="ca-cal-grid" data-cal-grid></div>
+            <div class="ca-cal-legend">
+              <span><i class="ca-tag-mains"></i>Mains</span>
+              <span><i class="ca-tag-prelims"></i>Prelims</span>
+              <span><i class="ca-tag-pib"></i>PIB</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- News Navigator -->
+    <section class="ca-section" id="news-navigator">
+      <div class="container">
+        <div class="ca-section-heading">
+          <div>
+            <span class="ca-section-number">03</span>
+            <div><p>News Navigator</p><h2>Browse news the way UPSC preparation actually works.</h2></div>
+          </div>
+          <a href="aram-ai.html" class="ca-text-link">ARAM AI →</a>
+        </div>
+
+        <div class="ca-filter-shell">
+          <div class="ca-filter-row">
+            <strong>GS Paper</strong>
+            <div class="ca-filter-chips" data-filter-group="gs">
+              <button class="is-active" data-filter="all">All</button>
+              <button data-filter="gs1">GS I</button>
+              <button data-filter="gs2">GS II</button>
+              <button data-filter="gs3">GS III</button>
+              <button data-filter="gs4">GS IV</button>
+            </div>
+          </div>
+          <div class="ca-filter-row">
+            <strong>Subject</strong>
+            <div class="ca-filter-chips ca-filter-scroll" data-filter-group="subject">
+              <button class="is-active" data-filter="all">All</button>
+              <button data-filter="history">History</button>
+              <button data-filter="geography">Geography</button>
+              <button data-filter="society">Society</button>
+              <button data-filter="polity">Polity</button>
+              <button data-filter="governance">Governance</button>
+              <button data-filter="ir">IR</button>
+              <button data-filter="economy">Economy</button>
+              <button data-filter="environment">Environment</button>
+              <button data-filter="science">S&amp;T</button>
+              <button data-filter="ethics">Ethics</button>
+            </div>
+          </div>
+          <div class="ca-filter-row ca-filter-row-last">
+            <strong>Lens</strong>
+            <div class="ca-filter-chips" data-filter-group="lens">
+              <button class="is-active" data-filter="all">All</button>
+              <button data-filter="prelims">Prelims</button>
+              <button data-filter="mains">Mains</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="ca-news-grid" id="newsGrid">
+          <article class="ca-news-card" data-gs="gs2" data-subject="polity governance" data-lens="both" data-searchable="Supreme Court executive discretion judiciary fundamental rights polity governance">
+            <div class="ca-card-meta"><span>Polity</span><span>GS II</span><span>8 min</span></div>
+            <h3>Supreme Court ruling and executive discretion</h3>
+            <p>Why it matters for accountability, constitutional limits and institutional balance.</p>
+            <div class="ca-relevance"><span><small>Prelims</small><b class="level-3">●●●○○</b></span><span><small>Mains</small><b class="level-4">●●●●○</b></span></div>
+            <div class="ca-card-footer"><small>Judiciary · Fundamental Rights</small><a href="#">Read →</a></div>
+          </article>
+
+          <article class="ca-news-card" data-gs="gs3" data-subject="economy" data-lens="both" data-searchable="RBI monetary policy inflation growth economy repo rate">
+            <div class="ca-card-meta"><span>Economy</span><span>GS III</span><span>7 min</span></div>
+            <h3>RBI monetary policy: reading the inflation-growth trade-off</h3>
+            <p>Connect the policy stance to inflation targeting, liquidity, growth and transmission.</p>
+            <div class="ca-relevance"><span><small>Prelims</small><b>●●●●○</b></span><span><small>Mains</small><b>●●●●○</b></span></div>
+            <div class="ca-card-footer"><small>Monetary Policy · Inflation</small><a href="#">Read →</a></div>
+          </article>
+
+          <article class="ca-news-card" data-gs="gs3" data-subject="environment" data-lens="prelims" data-searchable="Ramsar sites wetlands environment species ecology prelims">
+            <div class="ca-card-meta"><span>Environment</span><span>GS III</span><span>5 min</span></div>
+            <h3>New Ramsar sites: the facts worth retaining</h3>
+            <p>A concise Prelims-first note on criteria, locations, ecology and convention basics.</p>
+            <div class="ca-relevance"><span><small>Prelims</small><b>●●●●●</b></span><span><small>Mains</small><b>●●○○○</b></span></div>
+            <div class="ca-card-footer"><small>Wetlands · Convention</small><a href="#">Read →</a></div>
+          </article>
+
+          <article class="ca-news-card" data-gs="gs3" data-subject="science economy" data-lens="both" data-searchable="semiconductor mission science technology economy manufacturing chips">
+            <div class="ca-card-meta"><span>S&amp;T</span><span>GS III</span><span>9 min</span></div>
+            <h3>India Semiconductor Mission: from incentives to ecosystem</h3>
+            <p>Move beyond fab announcements to design, packaging, talent, supply chains and strategic autonomy.</p>
+            <div class="ca-relevance"><span><small>Prelims</small><b>●●●○○</b></span><span><small>Mains</small><b>●●●●●</b></span></div>
+            <div class="ca-card-footer"><small>Semiconductors · Manufacturing</small><a href="#">Read →</a></div>
+          </article>
+
+          <article class="ca-news-card" data-gs="gs2" data-subject="ir" data-lens="mains" data-searchable="India Africa global south international relations development partnership">
+            <div class="ca-card-meta"><span>IR</span><span>GS II</span><span>8 min</span></div>
+            <h3>India–Africa and the politics of the Global South</h3>
+            <p>Frame development partnership, representation, trade and strategic competition in one answer-ready issue.</p>
+            <div class="ca-relevance"><span><small>Prelims</small><b>●●○○○</b></span><span><small>Mains</small><b>●●●●●</b></span></div>
+            <div class="ca-card-footer"><small>Global South · Bilateral Relations</small><a href="#">Read →</a></div>
+          </article>
+
+          <article class="ca-news-card" data-gs="gs1" data-subject="society" data-lens="mains" data-searchable="women time poverty care economy society gender labour participation">
+            <div class="ca-card-meta"><span>Society</span><span>GS I</span><span>6 min</span></div>
+            <h3>Women’s time poverty and the invisible care economy</h3>
+            <p>Use the concept to enrich answers on labour-force participation, unpaid work and gender inequality.</p>
+            <div class="ca-relevance"><span><small>Prelims</small><b>●○○○○</b></span><span><small>Mains</small><b>●●●●●</b></span></div>
+            <div class="ca-card-footer"><small>Women · Work · Social Change</small><a href="#">Read →</a></div>
+          </article>
+        </div>
+        <div class="ca-empty" id="newsEmpty" hidden>No stories match these filters. Clear a filter or search another term.</div>
+      </div>
+    </section>
+
+    <!-- Mains issue desk -->
+    <section class="ca-section ca-section-alt" id="mains-desk">
+      <div class="container">
+        <div class="ca-section-heading">
+          <div>
+            <span class="ca-section-number">04</span>
+            <div><p>Mains Issue Desk</p><h2>Stop storing dates. Build issue memory.</h2></div>
+          </div>
+          <a href="aram-ai.html" class="ca-text-link">ARAM AI →</a>
+        </div>
+        <div class="ca-issue-grid">
+          <article class="ca-issue-card">
+            <span>Governance</span><h3>Judicial Pendency</h3><p>Institutional causes, access to justice, technology, vacancies and reform options.</p><small>6 linked developments · 3 PYQs</small>
+          </article>
+          <article class="ca-issue-card">
+            <span>International Relations</span><h3>India–China Relations</h3><p>Border, economic dependence, Indo-Pacific, multilateral forums and strategic signalling.</p><small>11 linked developments · 4 PYQs</small>
+          </article>
+          <article class="ca-issue-card">
+            <span>Economy</span><h3>Employment &amp; Job Quality</h3><p>Labour force trends, informality, manufacturing, skilling and female participation.</p><small>8 linked developments · 5 PYQs</small>
+          </article>
+          <article class="ca-issue-card">
+            <span>Environment</span><h3>Energy Transition</h3><p>Renewables, storage, grid, critical minerals, coal transition and climate finance.</p><small>9 linked developments · 4 PYQs</small>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prelims sprint (moved directly after Mains Issue Desk) -->
+    <section class="ca-section ca-prelims-section" id="prelims-sprint">
+      <div class="container">
+        <div class="ca-section-heading">
+          <div>
+            <span class="ca-section-number">05</span>
+            <div><p>Prelims Sprint</p><h2>Fast, high-yield current-affairs revision.</h2></div>
+          </div>
+          <a href="aram-ai.html" class="ca-text-link">ARAM AI →</a>
+        </div>
+
+        <div class="ca-prelims-categories">
+          <a href="#"><span>01</span><strong>Places in News</strong><small>8 this week</small></a>
+          <a href="#"><span>02</span><strong>Species</strong><small>6 this week</small></a>
+          <a href="#"><span>03</span><strong>Schemes</strong><small>9 this week</small></a>
+          <a href="#"><span>04</span><strong>Reports &amp; Indices</strong><small>5 this week</small></a>
+          <a href="#"><span>05</span><strong>Organisations</strong><small>4 this week</small></a>
+          <a href="#"><span>06</span><strong>Science &amp; Tech</strong><small>7 this week</small></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PIB -->
+    <section class="ca-section" id="pib">
+      <div class="container">
+        <div class="ca-section-heading">
+          <div>
+            <span class="ca-section-number">06</span>
+            <div><p>PIB Today</p><h2>Filtered government information, not a release dump.</h2></div>
+          </div>
+          <a href="aram-ai.html" class="ca-text-link">ARAM AI →</a>
+        </div>
+
+        <div class="ca-pib-summary">
+          <div><strong>7</strong><span>important releases selected</span></div>
+          <div><strong>43</strong><span>releases scanned</span></div>
+          <div><strong>4</strong><span>ministries represented</span></div>
+          <a href="#quiz-hub">Take PIB Quiz →</a>
+        </div>
+
+        <div class="ca-pib-list">
+          <article class="ca-pib-item">
+            <div><span>Ministry of Environment</span><h3>National Clean Air Programme: implementation update</h3><p>Keep: target framework, city action plans, monitoring and implementation challenges.</p></div>
+            <div class="ca-pib-tags"><span>Prelims</span><span>Mains</span></div>
+          </article>
+          <article class="ca-pib-item">
+            <div><span>Ministry of Finance</span><h3>Digital payments and financial inclusion initiative</h3><p>Keep: institutional architecture, inclusion link and potential governance concerns.</p></div>
+            <div class="ca-pib-tags"><span>Prelims</span><span>Mains</span></div>
+          </article>
+          <article class="ca-pib-item">
+            <div><span>Ministry of Health</span><h3>Public-health programme dashboard update</h3><p>Keep: scheme objective, implementation structure, target population and one usable data point.</p></div>
+            <div class="ca-pib-tags"><span>Prelims</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Issue chains -->
+    <section class="ca-section" id="issue-chains">
+      <div class="container">
+        <div class="ca-section-heading">
+          <div>
+            <span class="ca-section-number">07</span>
+            <div><p>Follow the Issue</p><h2>See how a story develops over time.</h2></div>
+          </div>
+        </div>
+        <div class="ca-chain-shell">
+          <div class="ca-chain-head">
+            <div><span>Issue Tracker</span><h3>India–US Relations</h3></div>
+            <a href="aram-ai.html">ARAM AI →</a>
+          </div>
+          <div class="ca-timeline">
+            <div><b>JAN</b><span></span><p>Trade negotiations</p></div>
+            <div><b>MAR</b><span></span><p>Technology cooperation</p></div>
+            <div><b>MAY</b><span></span><p>Tariff disagreement</p></div>
+            <div><b>JUL</b><span></span><p>Defence cooperation</p></div>
+            <div class="is-current"><b>SEP</b><span></span><p>Latest development</p></div>
+          </div>
+          <div class="ca-chain-bottom">
+            <span>Where we stand now</span><span>Prelims facts</span><span>Mains arguments</span><span>Relevant PYQs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quiz hub -->
+    <section class="ca-section ca-section-dark" id="quiz-hub">
+      <div class="container">
+        <div class="ca-section-heading ca-section-heading-light">
+          <div>
+            <span class="ca-section-number">08</span>
+            <div><p>Test Yourself</p><h2>Use quizzes as retrieval and revision, not trivia.</h2></div>
+          </div>
+        </div>
+        <div class="ca-quiz-grid">
+          <article><span>Daily</span><h3>Today's CA Quiz</h3><p>10 questions · today's high-value news</p><a href="#">Start quiz →</a></article>
+          <article><span>PIB</span><h3>PIB Quiz</h3><p>10 questions · selected government releases</p><a href="#">Start quiz →</a></article>
+          <article class="is-featured"><span>ARAM</span><h3>Prediction CA Quiz</h3><p>High-probability themes and exam-oriented testing.</p><a href="#">Attempt →</a></article>
+          <article><span>Weekly</span><h3>Weekly Revision Test</h3><p>50 questions · cumulative current affairs</p><a href="#">Start test →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Revision centre -->
+    <section class="ca-section" id="revision-centre">
+      <div class="container">
+        <div class="ca-section-heading">
+          <div>
+            <span class="ca-section-number">09</span>
+            <div><p>Revision Centre</p><h2>Daily reading is useful only if it consolidates.</h2></div>
+          </div>
+        </div>
+        <div class="ca-revision-grid">
+          <article class="ca-revision-feature">
+            <span>This Week · 7–13 Sep</span>
+            <h3>Weekly Current Affairs Revision</h3>
+            <div class="ca-revision-stats"><div><b>38</b><small>developments</small></div><div><b>14</b><small>Mains issues</small></div><div><b>42</b><small>Prelims facts</small></div><div><b>70</b><small>MCQs</small></div></div>
+            <a href="#" class="btn btn-primary">Revise This Week</a>
+          </article>
+          <div class="ca-month-list">
+            <div class="ca-panel-head"><div><p>Monthly Compilations</p><small>Read online · PDF · test</small></div></div>
+            <a href="#"><span>August 2026</span><small>122 issues · 280 facts</small><strong>Open →</strong></a>
+            <a href="#"><span>July 2026</span><small>118 issues · 263 facts</small><strong>Open →</strong></a>
+            <a href="#"><span>June 2026</span><small>109 issues · 251 facts</small><strong>Open →</strong></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subject browse -->
+    <section class="ca-section ca-section-alt" id="browse-subject">
+      <div class="container">
+        <div class="ca-section-heading">
+          <div>
+            <span class="ca-section-number">10</span>
+            <div><p>Browse by Subject</p><h2>Use the archive like a UPSC knowledge base.</h2></div>
+          </div>
+          <a href="aram-ai.html" class="ca-text-link">ARAM AI →</a>
+        </div>
+        <div class="ca-subject-grid">
+          <a href="#">Polity <span>142 →</span></a>
+          <a href="#">Economy <span>168 →</span></a>
+          <a href="#">International Relations <span>114 →</span></a>
+          <a href="#">Environment <span>131 →</span></a>
+          <a href="#">Science &amp; Technology <span>102 →</span></a>
+          <a href="#">Society <span>76 →</span></a>
+          <a href="#">Geography <span>84 →</span></a>
+          <a href="#">History &amp; Culture <span>61 →</span></a>
+          <a href="#">Governance <span>97 →</span></a>
+          <a href="#">Social Justice <span>73 →</span></a>
+          <a href="#">Internal Security <span>58 →</span></a>
+          <a href="#">Agriculture <span>88 →</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Existing footer pattern -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo brand-logo-image"><img src="assets/aram-logo.svg" alt="ARAM IAS Academy logo"></div>
+          <p>From Preparation to Performance. Building serious UPSC aspirants through diagnosis, writing, evaluation and mentorship.</p>
+        </div>
+        <div class="footer-column"><h4>Foundation</h4><ul><li><a href="programmes-upsc-foundation.html">UPSC Foundation</a></li><li><a href="programmes.html">TNPSC</a></li></ul></div>
+        <div class="footer-column"><h4>Post Foundation</h4><ul><li><a href="post-foundation.html">Overview</a></li><li><a href="post-foundation-writelab.html">WriteLab</a></li><li><a href="current-affairs.html">Current Affairs</a></li></ul></div>
+        <div class="footer-column"><h4>Current Affairs</h4><ul><li><a href="#news-navigator">News Navigator</a></li><li><a href="#pib">PIB</a></li><li><a href="#quiz-hub">Quizzes</a></li><li><a href="#revision-centre">Revision</a></li></ul></div>
+        <div class="footer-column"><h4>ARAM</h4><ul><li><a href="about.html">About ARAM</a></li><li><a href="results.html">Results</a></li><li><a href="centres.html">Centres</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 ARAM IAS Academy. All rights reserved.</p><p>Official locations: Chennai | Delhi</p></div>
+    </div>
+  </footer>
+
+  <!-- Shared site chrome: renders announcement bar, nav and footer -->
+  <script src="js/content-blueprint.js?v=72"></script>
+  <!-- Current Affairs page interactions: filters, search, subnav, date nav -->
+  <script src="js/current-affairs.js?v=4"></script>
+</body>
+</html>

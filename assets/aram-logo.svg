@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 250" role="img" aria-labelledby="title desc">
+  <title id="title">ARAM IAS Academy logo</title>
+  <desc id="desc">ARAM IAS Academy logo with golden dome, ARAM Academy lettering, since 2011 and Tamil tagline.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="1.5" dy="1.5" stdDeviation="0" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+    <linearGradient id="gold" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffd918"/>
+      <stop offset="1" stop-color="#f2b700"/>
+    </linearGradient>
+    <style>
+      .gold-fill{fill:url(#gold);stroke:#111;stroke-width:1.2}
+      .silver{fill:#f4f4f4;stroke:#111;stroke-width:1.4;filter:url(#shadow)}
+      .small{font-family:Georgia, 'Times New Roman', serif;font-weight:700;letter-spacing:.12em}
+      .serif{font-family:Georgia, 'Times New Roman', serif;font-weight:700}
+      .tamil{font-family:'Noto Serif Tamil', 'Latha', Georgia, serif;font-weight:700}
+    </style>
+  </defs>
+
+  <g transform="translate(176 2)">
+    <path class="gold-fill" d="M67 0h6v69h-6z"/>
+    <path class="gold-fill" d="M73 3c17-6 27 6 45 0v28c-18 7-28-5-45 0z"/>
+    <path class="gold-fill" d="M0 102h148v41H0z"/>
+    <path class="gold-fill" d="M18 101c7-27 30-48 56-48s49 21 56 48z"/>
+    <path class="gold-fill" d="M19 145h110v5H19zM-2 153h152v5H-2z"/>
+    <g fill="#111">
+      <rect x="18" y="112" width="6" height="19" rx="2"/>
+      <rect x="40" y="112" width="6" height="19" rx="2"/>
+      <rect x="62" y="112" width="6" height="19" rx="2"/>
+      <rect x="84" y="112" width="6" height="19" rx="2"/>
+      <rect x="106" y="112" width="6" height="19" rx="2"/>
+      <rect x="128" y="112" width="6" height="19" rx="2"/>
+    </g>
+  </g>
+
+  <text class="serif silver" x="0" y="187" font-size="82">ARAM</text>
+  <text class="serif silver" x="304" y="188" font-size="40">IAS</text>
+  <text class="serif silver" x="304" y="218" font-size="38">ACADEMY</text>
+  <text class="small silver" x="136" y="224" font-size="32">SINCE 2011</text>
+
+  <g fill="#169400" stroke="#111" stroke-width=".8">
+    <path d="M13 208l3 8 9 .1-7 5.2 2.6 8.6-7.6-5-7.6 5 2.6-8.6-7-5.2 9-.1z"/>
+    <path d="M58 208l3 8 9 .1-7 5.2 2.6 8.6-7.6-5-7.6 5 2.6-8.6-7-5.2 9-.1z"/>
+    <path d="M103 208l3 8 9 .1-7 5.2 2.6 8.6-7.6-5-7.6 5 2.6-8.6-7-5.2 9-.1z"/>
+    <path d="M398 208l3 8 9 .1-7 5.2 2.6 8.6-7.6-5-7.6 5 2.6-8.6-7-5.2 9-.1z"/>
+    <path d="M443 208l3 8 9 .1-7 5.2 2.6 8.6-7.6-5-7.6 5 2.6-8.6-7-5.2 9-.1z"/>
+    <path d="M488 208l3 8 9 .1-7 5.2 2.6 8.6-7.6-5-7.6 5 2.6-8.6-7-5.2 9-.1z"/>
+  </g>
+
+  <text class="tamil silver" x="112" y="247" font-size="28">அறம் செய்வோம் வா...</text>
+</svg>
